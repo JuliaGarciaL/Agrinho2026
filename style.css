@@ -1,0 +1,106 @@
+/* Variáveis para controle de cores (Modo Claro/Escuro) */
+:root {
+    --bg-fundo: #fafdfa;
+    --bg-card: #ffffff;
+    --texto: #2c3e50;
+    --cor-principal: #2e7d32;
+    --cor-destaque: #d84315;
+}
+
+.dark-mode {
+    --bg-fundo: #121212;
+    --bg-card: #1e1e1e;
+    --texto: #e0e0e0;
+    --cor-principal: #81c784;
+}
+
+/* Configurações básicas */
+body {
+    background-color: var(--bg-fundo);
+    color: var(--texto);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* Conteúdo Textual */
+.conteudo-principal p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Estilo do Quiz */
+.pergunta {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 4px solid var(--cor-principal);
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+/* Botões e Interações */
+button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    transform: scale(1.02);
+}
+
+/* Elementos dinâmicos do JS */
+.oculto {
+    display: none;
+}
+
+#resultado-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(46, 125, 50, 0.1);
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* 📱 Responsividade (Media Query) */
+@media (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+}

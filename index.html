@@ -1,10 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Exército do Bem, controle biologico de pragas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exército do Bem - Controle Biológico</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <backgraund-color></backgraund-color>
+
+    <header>
+        <div class="nav-container">
+            <h1>🌱 Exército do Bem</h1>
+            <button id="btn-theme">🌓 Alternar Modo</button>
+        </div>
+    </header>
+
+    <main>
+        <article class="conteudo-principal">
+            <h2>A Natureza Protegendo a Natureza</h2>
+            <p>Você sabia que muitos agricultores estão reduzindo drasticamente o uso de defensivos químicos (agrotóxicos) nos alimentos? Isso é possível graças ao <strong>controle biológico</strong>, uma técnica que usa a própria natureza para combater as pragas que destroem as plantações.</p>
+            
+            <p>Em vez de veneno, os produtores rurais escalam o "Exército do Bem". Eles soltam <strong>insetos predadores</strong> nas lavouras, como as joaninhas, que são devoradoras famintas de pulgões, e pequenas vespas, que impedem o nascimento de novas lagartas.</p>
+            
+            <p>Além dos insetos, o exército conta com aliados invisíveis: os <strong>fungos naturais</strong>. Esses fungos agem como defensores biológicos, infectando e eliminando insetos nocivos sem poluir o solo ou a água. É a ciência e a tecnologia trabalhando juntas por uma agricultura muito mais sustentável!</p>
+        </article>
+
+        <hr>
+
+        <section class="secao-quiz">
+            <h2>🧠 Desafio do Conhecimento</h2>
+            <p>Será que você prestou atenção? Responda às perguntas abaixo para testar seus conhecimentos!</p>
+
+            <form id="quiz-form" onsubmit="event.preventDefault();">
+                <div class="pergunta">
+                    <p><strong>1. Qual inseto é famoso por ser um predador de pulgões nas plantações?</strong></p>
+                    <label><input type="radio" name="p1" value="errado"> Gafanhoto</label><br>
+                    <label><input type="radio" name="p1" value="correto"> Joaninha</label><br>
+                    <label><input type="radio" name="p1" value="errado"> Lagarta</label>
+                </div>
+
+                <div class="pergunta">
+                    <p><strong>2. Além dos insetos, qual outro recurso natural é usado no controle biológico?</strong></p>
+                    <label><input type="radio" name="p2" value="errado"> Fertilizantes químicos</label><br>
+                    <label><input type="radio" name="p2" value="errado"> Tintas especiais</label><br>
+                    <label><input type="radio" name="p2" value="correto"> Fungos naturais</label>
+                </div>
+
+                <button type="button" id="btn-enviar" onclick="verificarQuiz()">Verificar Respostas</button>
+            </form>
+
+            <div id="resultado-box" class="oculto">
+                <h3 id="resultado-texto"></h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Concurso Agrinho: Controle Biológico de Pragas</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
