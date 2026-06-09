@@ -93,7 +93,7 @@ button:hover {
     text-align: center;
 }
 
-/* 📱 Responsividade (Media Query) */
+/*  Responsividade (Media Query) */
 @media (max-width: 600px) {
     .nav-container {
         flex-direction: column;
