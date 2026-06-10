@@ -27,7 +27,7 @@ function verificarQuiz() {
     } else if (acertos === 1) {
         resultadoTexto.textContent = " Você acertou 1 de 2 questões.";
     } else {
-        resultadoTexto.textContent = " Ops! Nenhuma resposta correta, tente novamente.";
+        resultadoTexto.textContent = " Nenhuma resposta correta, tente novamente.";
     }
 
     resultadoBox.classList.remove('oculto');
