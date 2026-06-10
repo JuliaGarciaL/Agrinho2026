@@ -14,7 +14,7 @@ function verificarQuiz() {
     const resultadoTexto = document.getElementById('resultado-texto');
 
     if (!r1 || !r2) {
-        alert("Por favor, responda todas as perguntas antes de enviar!");
+        alert("Responda todas as perguntas antes de enviar!");
         return;
     }
     let acertos = 0;
@@ -25,9 +25,9 @@ function verificarQuiz() {
     if (acertos === 2) {
         resultadoTexto.textContent = " Parabéns! Você acertou todas as 2 questões!";
     } else if (acertos === 1) {
-        resultadoTexto.textContent = " Você acertou 1 de 2 questões. Leia o texto novamente!";
+        resultadoTexto.textContent = " Você acertou 1 de 2 questões.";
     } else {
-        resultadoTexto.textContent = " Ops! Nenhuma resposta correta. Que tal reler o texto?";
+        resultadoTexto.textContent = " Ops! Nenhuma resposta correta, tente novamente.";
     }
 
     resultadoBox.classList.remove('oculto');

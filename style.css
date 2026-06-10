@@ -1,4 +1,3 @@
-/* Variáveis para controle de cores (Modo Claro/Escuro) */
 :root {
     --bg-fundo: #fafdfa;
     --bg-card: #ffffff;
@@ -14,7 +13,6 @@
     --cor-principal: #81c784;
 }
 
-/* Configurações básicas */
 body {
     background-color: var(--bg-fundo);
     color: var(--texto);
@@ -43,13 +41,11 @@ main {
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
-/* Conteúdo Textual */
 .conteudo-principal p {
     font-size: 1.1rem;
     margin-bottom: 15px;
 }
 
-/* Estilo do Quiz */
 .pergunta {
     margin-bottom: 20px;
     padding: 10px;
@@ -63,7 +59,6 @@ label {
     margin: 5px 0;
 }
 
-/* Botões e Interações */
 button {
     background-color: #2e7d32;
     color: white;
@@ -80,7 +75,6 @@ button:hover {
     transform: scale(1.02);
 }
 
-/* Elementos dinâmicos do JS */
 .oculto {
     display: none;
 }
@@ -93,7 +87,6 @@ button:hover {
     text-align: center;
 }
 
-/*  Responsividade (Media Query) */
 @media (max-width: 600px) {
     .nav-container {
         flex-direction: column;
